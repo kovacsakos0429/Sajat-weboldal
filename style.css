@@ -8,7 +8,8 @@ body {
 	max-width: 960px;
 	padding-left: 2.275%;
 	padding-right: 2.275%;
-	background-image: url(images/wallpaper.jpg);
+	background: rgb(17,53,87);
+	background: radial-gradient(circle, rgba(17,53,87,1) 0%, rgba(5,21,38,1) 100%);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -131,26 +132,32 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	display: block;
 }
 .mainContent .externalResourcesNav .externalResources {
-	background-color: rgba(208,207,207,1.00);
+	background-color: rgba(146,146,146,1.00);
 	display: inline-block;
 	text-align: center;
 	margin-top: 0px;
 	padding-top: 3%;
 	cursor: pointer;
+	border-radius: 15px;
 }
+
 .mainContent .externalResourcesNav .externalResources:hover {
-	background-color: rgba(153,153,153,1.00);
+	box-shadow: 0px 0px 10px 3px #708090;
+	-webkit-transition: 0.3s;
+    transition: 0.3s;
+	
 }
+
 .externalResourcesNav .externalResources a {
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(255,255,255,1.00);
+	color: black;
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 18px;
 	text-decoration: none;
 }
+
 .stretch {
-	
 	display: inline-block;
 	margin-left: 2%;
 	margin-right: 2%;
@@ -184,7 +191,7 @@ ul {
 
 .box {
   height: 1em;
-  width: 93%;
+  width: 100%;
   border: .2em solid rgba(146,146,146,1.00);
   display: inline-block;
   margin: .5em 0 2em;
@@ -197,7 +204,7 @@ ul {
 
 #one {
   height: 1em;
-  width: 60%;
+  width: 80%;
   background: rgba(146,146,146,1.00);
   display: block;
   border-radius: 15px;
@@ -205,7 +212,7 @@ ul {
 
 #two {
   height: 1em;
-  width: 90%;
+  width: 80%;
   background: rgba(146,146,146,1.00);
   display: block;
   border-radius: 15px;
@@ -221,7 +228,7 @@ ul {
 
 #four {
   height: 1em;
-  width: 90%;
+  width: 20%;
   background: rgba(146,146,146,1.00);
   display: block;
   border-radius: 15px;
@@ -229,14 +236,15 @@ ul {
 
 #five {
   height: 1em;
-  width: 92%;
+  width: 40%;
   background: rgba(146,146,146,1.00);
   display: block;
+  border-radius: 15px;
 }
 
 #six {
   height: 1em;
-  width: 85%;
+  width: 25%;
   background: rgba(146,146,146,1.00);
   display: block;
   border-radius: 15px;
@@ -256,7 +264,7 @@ ul {
 
 .pricing-table{
   max-width: 100%;
-  margin: auto;
+  margin: 0px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -265,7 +273,7 @@ ul {
 
 .col{
   flex: 25%;
-  padding: 10px;
+  padding: 15px 10px;
   max-width: 320px;
   box-sizing: border-box;
   color: black;
@@ -294,11 +302,19 @@ ul {
 .price{
   font-size: 40px;
   margin-bottom: 20px;
+
 }
 .price h4{
   display: block;
   font-size: 14px;
   color: black;
+}
+
+.table:hover {
+	box-shadow: 0px 5px 10px 3px #708090;
+	-webkit-transition: 0.3s;
+    transition: 0.3s;
+	
 }
 
 
@@ -308,11 +324,6 @@ ul {
   }
 }
 
-@media screen and (max-width:700px) {
-  .col{
-    flex: 100%;
-  }
-}
 
 
 /* Keyframe */
@@ -481,11 +492,9 @@ footer .footerNote span {
 		margin-bottom: 5%;
 	}
 	.mainContent .externalResourcesNav {
-		margin-left: 20%;
-		margin-top: 40px;
-		margin-bottom: 40px;
+		margin-bottom: 10%;
 		text-align: center;
-		padding-top: 0px;
+		padding-top: 5%;
 		clear: both;
 	}
 	.mainContent .externalResourcesNav .externalResources {
