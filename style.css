@@ -39,7 +39,7 @@ header .logoPlaceholder span {
 
 header .profileHeader h1 {
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: rgba(175,175,175,1.00);
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 24px;
@@ -47,7 +47,7 @@ header .profileHeader h1 {
 }
 header .profileHeader h3 {
 	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: rgba(175,175,175,1.00);
 	font-size: 26px;
 	font-weight: 700;
 	line-height: 24px;
@@ -59,7 +59,7 @@ hr {
 }
 header .profileHeader p {
 	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: rgba(175,175,175,1.00);
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.8;
@@ -84,7 +84,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 .section1 .sectionTitle, .section2 .sectionTitle {
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: rgba(175,175,175,1.00);
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -106,12 +106,17 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	color: rgba(208,207,207,1.00);
 }
 .mainContent .section1 .section1Content span {
-	color: rgba(146,146,146,1.00);
+	color: rgrgba(175,175,175,1.00);
 	font-family: sans-serif;
+}
+.mainContent .section1 .section1Content a {
+	color: rgba(208,207,207,1.00);
+	font-family: sans-serif;
+	text-decoration: none;
 }
 .section2 .sectionContentTitle {
 	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: rgba(175,175,175,1.00);
 	font-size: 18px;
 	font-weight: 200;
 }
@@ -123,7 +128,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 .section2 .sectionContent {
 	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: rgba(175,175,175,1.00);
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.8;
@@ -132,13 +137,17 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	display: block;
 }
 .mainContent .externalResourcesNav .externalResources {
-	background-color: rgba(146,146,146,1.00);
+	background-color: rgba(175,175,175,1.00);
 	display: inline-block;
 	text-align: center;
 	margin-top: 0px;
 	padding-top: 3%;
 	cursor: pointer;
 	border-radius: 15px;
+}
+
+.mainContent .externalResourcesNav a{
+	text-decoration: none;
 }
 
 .mainContent .externalResourcesNav .externalResources:hover {
@@ -163,6 +172,19 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	margin-right: 2%;
 }
 
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+#cim{
+	font-size: 16px;
+}
+
 #skills {
   margin: 4em auto;
   max-width: 100%;
@@ -181,7 +203,7 @@ li {
 
 ul {
   padding-left: 0;
-  color: rgba(146,146,146,1.00);;
+  color: rgba(175,175,175,1.00);
   text-align: left;
   list-style-type: none;
 }
@@ -192,7 +214,7 @@ ul {
 .box {
   height: 1em;
   width: 100%;
-  border: .2em solid rgba(146,146,146,1.00);
+  border: .2em solid rgba(175,175,175,1.00);
   display: inline-block;
   margin: .5em 0 2em;
   text-align: center;
@@ -205,7 +227,7 @@ ul {
 #one {
   height: 1em;
   width: 80%;
-  background: rgba(146,146,146,1.00);
+  background: rgba(175,175,175,1.00);
   display: block;
   border-radius: 15px;
 }
@@ -213,7 +235,7 @@ ul {
 #two {
   height: 1em;
   width: 80%;
-  background: rgba(146,146,146,1.00);
+  background: rgba(175,175,175,1.00);
   display: block;
   border-radius: 15px;
 }
@@ -221,7 +243,7 @@ ul {
 #three {
   height: 1em;
   width: 40%;
-  background: rgba(146,146,146,1.00);
+  background: rgba(175,175,175,1.00);
   display: block;
   border-radius: 15px;
 }
@@ -229,7 +251,7 @@ ul {
 #four {
   height: 1em;
   width: 20%;
-  background: rgba(146,146,146,1.00);
+  background: rgba(175,175,175,1.00);
   display: block;
   border-radius: 15px;
 }
@@ -237,7 +259,7 @@ ul {
 #five {
   height: 1em;
   width: 40%;
-  background: rgba(146,146,146,1.00);
+  background: rgba(175,175,175,1.00);
   display: block;
   border-radius: 15px;
 }
@@ -245,7 +267,7 @@ ul {
 #six {
   height: 1em;
   width: 25%;
-  background: rgba(146,146,146,1.00);
+  background: rgba(175,175,175,1.00);
   display: block;
   border-radius: 15px;
 }
@@ -280,7 +302,7 @@ ul {
 }
 
 .table{
-  background: rgba(146,146,146,1.00);
+  background: rgba(175,175,175,1.00);
   padding: 30px 20px;
   font-family: "montserrat",sans-serif;
   position: relative;
@@ -315,6 +337,83 @@ ul {
 	-webkit-transition: 0.3s;
     transition: 0.3s;
 	
+}
+
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay:0.4s;
+  animation-delay: 0.4s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.four {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+  animation-delay: 1.0s;
 }
 
 
@@ -360,6 +459,45 @@ footer .footerNote span {
 	font-weight: 400;
 }
 
+.come-in {
+  /*transform: translateY(100px);*/
+  transform: translate3d(-100px, 0, 0);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 1.0s;
+}
+
+.come-in2 {
+  /*transform: translateY(100px);*/
+  transform: translate3d(100px, 0, 0);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in2:nth-child(odd) {
+  animation-duration: 1.0s;
+}
+
+.come-in3 {
+  /*transform: translateY(100px);*/
+  transform: translate3d(0, 50px, 0);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in3:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.already-visible {
+  /*transform: translateY(0);*/
+  transform: translate3d(0, 0, 0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translate3d(0, 0, 0); }
+}
+
 /* Media query for Mobile devices*/
 @media only screen and (min-width : 285px) and (max-width : 480px) {
 	/* Header */
@@ -377,6 +515,14 @@ footer .footerNote span {
 		text-align: center;
 		margin-top: 10%;
 	}
+	header .profileHeader h1 {
+	font-size: 35px;
+	line-height: 24px;
+	}
+	header .profileHeader h3 {
+		font-size: 20px;
+		line-height: 24px;
+	}
 	header .profileHeader p {
 		text-align: justify;
 	}
@@ -392,7 +538,9 @@ footer .footerNote span {
 		width: 60px;
 		height: 60px;
 		display: inline-block;
-		margin-right: 23px;
+	}
+	header .socialNetworkNavBar .socialNetworkNav img{
+		width: 50px;
 	}
 	/* Main content sections */
 	.mainContent .section1 {
@@ -425,9 +573,15 @@ footer .footerNote span {
 	.mainContent .externalResourcesNav {
 		margin-bottom: 10%;
 	}
+	
 	.mainContent .externalResourcesNav .externalResources {
 		width: 100%;
 		height: 35px;
+	}
+	#skills {
+		margin: 4em 3px auto auto;
+		max-width: 100%;
+		display: block;
 	}
 	/* Footer */
 	footer {

@@ -7,14 +7,11 @@
 <title>Kovács Ákos</title>
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <link href="style.css" rel="stylesheet" type="text/css">
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
-
 
 
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
@@ -25,19 +22,19 @@
 <!-- Header content -->
 <header>
  
-  <div class="profilePhoto"> 
+  <div id="profile" class="profilePhoto fade-in"> 
     <!-- Profile photo --> 
     <img src="images/logo.png" width="200" alt="sample"> </div>
   <!-- Identity details -->
   <section class="profileHeader">
-    <h1>Kovács Ákos</h1>
-    <h3>Informatikai szolgáltatások</h3>
-    <hr>
-    <p>3 éve dolgozom Farkasgyepűn a Veszprém Megyei Tüdőgyógyintézetben, mint rendszergazda.</p>
-    <p>A vállalkozás fő tevékenysége számítógépek és laptopok szervízelése és karbantartása, statikus weblapok fejlesztése és karbantartása.</p>
+    <h1 class="slideDown">Kovács Ákos</h1>
+    <h3 class="slideDown">Informatikai szolgáltatások</h3>
+    <hr class="fade-in">
+    <p class="fade-in">3 éve dolgozom Farkasgyepűn a Veszprém Megyei Tüdőgyógyintézetben, mint rendszergazda.</p>
+    <p class="fade-in">A vállalkozás fő tevékenysége számítógépek és laptopok szervízelése és karbantartása, statikus weblapok fejlesztése és karbantartása.</p>
   </section>
   <!-- Links to Social network accounts -->
-  <aside class="socialNetworkNavBar">
+  <aside class="socialNetworkNavBar fade-in">
     <div class="socialNetworkNav"> 
       <!-- Add a Anchor tag with nested img tag here --> 
       <a href="https://www.linkedin.com/in/%C3%A1kos-kov%C3%A1cs-7a9889139/" target="new" ><img src="images/linkedin.png" width="75" title="Linked In" alt="sample"></a> </div>
@@ -53,7 +50,7 @@
   </aside>
 </header>
 <!-- content -->
-<section class="mainContent"> 
+<section class="mainContent fade-in"> 
  
   <!-- Previous experience details -->
   <section class="section2">
@@ -84,10 +81,11 @@
      
     </article>
     <!-- Second Title & company details  -->
-    <article class="section2Content">
-      <img src="images/vmtlogo.png" alt="" class="thumbnail_djp"/>
-      <p class="sectionContent"> A Veszprém Megyei Tüdőgyógyintézet Weboldala </p>
-    </article>
+  <aside class="externalResourcesNav zoom">
+  <a href="http:\\www.fgyepu-tudokorhaz.hu" target="new">
+	  <img src="images/vmtlogo.png">
+	  <p class="sectionContentTitle">A Veszprém Megyei Tüdőgyógyintézet Weboldala</p></a>
+  </aside>
     <!-- Replicate the above Div block to add more title and company details --> 
   </section>
   <section class="section2">
@@ -139,7 +137,7 @@
     <div class="pricing-table">
     <div class="col">
 
-      <div class="table">
+      <div id="tableleft" class="table">
         <h2>Szervíz</h2>
         <div class="price">
           5000 Ft.-
@@ -154,7 +152,7 @@
 	  </div>
     </div>
     <div class="col">
-      <div class="table">
+      <div id="tableright" class="table">
         <h2>Webdizájn</h2>
         <div class="price">
           15 000 Ft.-
@@ -176,8 +174,8 @@
     <h2 class="sectionTitle">ELérhetőségek</h2>
     <hr class="sectionTitleRule">
     <hr class="sectionTitleRule2">
-    <div class="section1Content">
-      <p><span>Email :</span> kovacsakos0429@gmail.com</p>
+    <div id="cim" class="section1Content">
+      <p><span>Email :</span><a href="mailto:tudogyogy@globonet.hu" title="E-mail küldése"> kovacsakos0429@gmail.com</a></p>
       <p><span>Telefon :</span> (+36) 30 392 0685</p>
       <p><span>Cím :</span> Farkasgyepű</p>
     </div>
@@ -200,13 +198,113 @@
     <!-- Replicate the above Div block to add more title and company details --> 
   </section>
   <aside class="externalResourcesNav">
-	  <div class="externalResources"> <a href="#" title="Önéletrajz letöltése">ÖNÉLETRAJZ</a> </div>
+	  <div id="cv" class="externalResources"> <a href="#" title="Önéletrajz letöltése">ÖNÉLETRAJZ</a> </div>
   </aside>
 </section>
 <footer>
   <hr>
-  <p class="footerDisclaimer">2019  Copyrights - <span>Minden jog fenntartva!</span></p>
+  <p class="footerDisclaimer">2019 &copy; - <span>Minden jog fenntartva!</span></p>
   <p class="footerNote">Kovács Ákos, Egyéni vállalkozó</p>
 </footer>
+	
+<script>
+	(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+
+    var $t = $(this),
+      $w = $(window),
+      viewTop = $w.scrollTop(),
+      viewBottom = viewTop + $w.height(),
+      _top = $t.offset().top,
+      _bottom = _top + $t.height(),
+      compareTop = partial === true ? _bottom : _top,
+      compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+
+})(jQuery);
+
+var win = $(window);
+var allMods = $("#tableleft");
+var allMods2 = $("#tableright");
+var allMods3 = $("#cv");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
+});
+	
+win.scroll(function(event) {
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in");
+    }
+	if($(window).width() < 768) {
+      el.classList.remove("come-in");
+    }
+  });
+});
+
+allMods2.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
+});
+	
+win.scroll(function(event) {
+  allMods2.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in2");
+    }
+	if($(window).width() < 768) {
+      el.classList.remove("come-in2");
+    }
+  });
+});
+
+allMods3.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
+});
+	
+win.scroll(function(event) {
+  allMods3.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in3");
+    }
+	if($(window).width() < 768) {
+      el.classList.remove("come-in3");
+    }
+  });
+});
+
+
+
+
+
+
+</script>
 </body>
 </html>
