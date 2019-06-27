@@ -7,6 +7,14 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
 
+.work-popup-content{
+	box-shadow: 5px 5px 10px #888888;
+}
+
+#about p{
+	text-align: justify;
+}
+
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -42,6 +50,9 @@ Copyright (c) 2015 Daniel Eden
 @media (max-width : 480px ){
 	.overlay{
 		display: none;
+	}
+	.footer .row{
+		text-align: center;
 	}
 }
 
